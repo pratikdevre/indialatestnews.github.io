@@ -14,7 +14,7 @@ body{
 }
 
 .navbar{
-    background-color: gray;
+    background-color: rgb(38, 33, 33);
     height: 80px;
     width: 100%;
 }
@@ -159,10 +159,16 @@ body{
 
 
 /* best receipe card section styling */
-.haha h1{
-    text-align: center;
-    margin: 30px;
+.haha{
+    background-color: #ffde22;
 }
+.haha h1{
+    color: rgb(155, 40, 40);
+    text-align: center;
+    padding-top: 30px;
+
+}
+
 .bestReceipe{
     height: auto;
     display: flex;
@@ -170,33 +176,122 @@ body{
     align-items: center;
     justify-content: space-around;
 }
+
 .bestReceipe .bestReceipeCards{
     margin: 50px;
+    box-shadow: 7px 7px 15px black;
 }
+.bestReceipe .bestReceipeCards:hover{
+    box-shadow: 10px 10px 10px black;
+}
+
 .bestReceipe .bestReceipeCards .img{
     height: 300px;
     width : 300px;
     background-image: url("../images/img1.jpg");
     background-size: 100% 100%;
 }
+
 .bestReceipe .bestReceipeCards h2{
     color: black;
     text-align: center;
-    margin: 5px;
-    font-size: 20px;
+    padding: 20px;
+    font-size: 15px;
 }
+.bestReceipe .bestReceipeCards h2:hover{
+    color: rgb(128, 85, 85);
+}
+
+.bestReceipe .bestReceipeCards .img1{
+    background-image: url("../images/img6.jpg");
+}
+.bestReceipe .bestReceipeCards .img2{
+    background-image: url("../images/img7.jpg");
+}
+.bestReceipe .bestReceipeCards .img3{
+    background-image: url("../images/img8.jpg");
+}
+.bestReceipe .bestReceipeCards .img4{
+    background-image: url("../images/img9.jpg");
+}
+.bestReceipe .bestReceipeCards .img5{
+    background-image: url("../images/img10.jpg");
+}
+.bestReceipe .bestReceipeCards .img6{
+    background-image: url("../images/img11.jpg");
+}
+
+
+
+/* more section styling */
+.more{
+    width: 100%;
+    height: 80vh;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.more .img{
+    z-index: -1;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    background-image: url("../images/img12.jpg");
+    background-size: 100% 100%;
+    opacity: .9;
+}
+.more .text h1{
+    line-height: 80px;
+    font-size: 50px;
+    
+    color: whitesmoke;
+}
+.more .text p{
+    line-height: 30px;
+    font-size: 15px;
+    
+    color: whitesmoke;
+}
+
+.more button{
+    cursor: pointer;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(98, 230, 80);
+    font-size: 17px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.more button:hover{
+    background-color: rgb(57, 107, 41);
+    color: whitesmoke;
+    transition: all ease .5s;
+}
+
+
+
+
+
+
+
+
 
 
 /* footer section styling */
 .footer{
     width: 100%;
     height: 100px;
-    background-color: grey;
+    background-color: rgb(38, 33, 33);
     color: whitesmoke;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-between;
+    padding: 50px;
 }
 
 
@@ -254,10 +349,45 @@ body{
     }
 
     .card{
-        width: 400px;
+        width: 350px;
     }
-    .card h1,
+    .card h1{
+        font-size: 20px;
+    }
     .card h3{
-        font-weight: bold;
+        font-size: 15px;
+    }
+    .card button{
+        margin: 2px;
+        padding: 7px;
+        font-size: 11px;
+    }
+    .haha h1{
+        margin: 15px;
+    }
+    
+    .bestReceipe .bestReceipeCards{
+        margin: 15px;
+    }
+    .bestReceipe .bestReceipeCards .img{
+        height: 210px;
+        width : 210px;
+    }
+    .bestReceipe .bestReceipeCards h2{
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .more .text h1{
+        font-size: 30px;
+    }
+    .more .text p{
+        font-size: 12px;
+    }
+
+    .more button{
+        margin: 10px;
+        padding: 15px;
+        font-size: 12px;
     }
 }
